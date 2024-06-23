@@ -1,0 +1,19 @@
+public class Main
+{
+	public static void main(String[] args) {
+		String ch="occurrence";
+		String p="car";
+		char fun[]=ch.toCharArray();
+		char vun[]=p.toCharArray();
+		for(int i=0;i<vun.length;i++){
+		    for(int j=0;j<fun.length;j++){
+		        if(vun[i]==fun[j]){
+		            fun[j]=0;
+		        }
+		    }
+		}
+		for(int i=0;i<fun.length;i++){
+		    System.out.print(fun[i]);
+		}
+	}
+}
